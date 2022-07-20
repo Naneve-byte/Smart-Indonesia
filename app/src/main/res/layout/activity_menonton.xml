@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menonton">
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtubePlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/layoutPlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/youtubePlayer">
+
+        <TextView
+            android:id="@+id/textPlay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Play Video"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_baseline_play_arrow_24" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textChooseVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:gravity="center_vertical"
+                android:text="Pilih video"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+            <LinearLayout
+                android:id="@+id/layoutVideoList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
