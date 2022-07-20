@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pintar Berbahasa</string>
+    <string name="hallo">Hallo!!!</string>
+
+    <string name="angka">Angka</string>
+    <string name="huruf">Huruf</string>
+    <string name="todo">TODO</string>
+    <string name="Alphabet">ALPHABET</string>
+    <string name="Berhitung" />
+    <string name="warna" />
+    <string name="hafalwarna" />
+    <string name="buah">Buah-buahan</string>
+    <string name="sing">Sing and Dance</string>
+    <string name="color">Warna Warni</string>
+</resources>
